@@ -20,14 +20,7 @@
         </div>
         <div><div style="display: inline-block;">
 
-        <ul>
-            <li>Edwards K:718-342-5467</li>
-            <li>Gibson S:347-675-1377</li>
-            <li>Nedd R:646-266-3708</li>
-            <li>Lambert C:917-786-4609</li>  
-             </ul></div><div style="display: inline-block;padding-left: 150px;">
-                 <img src="{{url_for('static', filename='B(2).jpg')}}" width=300>
-             </div></div>
+
         {% if session %}
             Hello {{ user.name }}! tell us how can we help you!.
             <form action="{{ url_for('messages') }}" method="POST">
