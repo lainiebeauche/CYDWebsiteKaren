@@ -8,6 +8,7 @@ from database import (
 )
 
 APP = Flask(__name__)
+APP.config['SECRET_KEY'] = 'super-secret-key1'
 AFFIRMATIONS = [
     "I feel the love of those who are not physically around me",
     "I take pleasure in my own solitude",
@@ -108,8 +109,6 @@ AFFIRMATIONS = [
     "All that I need comes to me at the right time and place in this life",
     "I am deeply fulfilled with who I am."
 ]
-
-#APP.config['SECRET_KEY'] = 'super-secret-key1'
 
 @APP.route('/about')
 def about():
