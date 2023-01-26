@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Write a message to mentor
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="../static/messages.css">
+
+              <link rel="stylesheet" type="text/css"
+              href="{{ url_for('static', filename='messages.css')}}">
+    </head>
+    <body>
+
+        <!-- Write the title of the page in a large heading font -->
+        <h1>
+            Write a message to a mentor
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+        <ul>
+            <li>Edwards K:718-342-5467</li>
+            <li>Gibson S:347-675-1377</li>
+            <li>Nedd R:646-266-3708</li>
+            <li>Lambert C:917-786-4609</li>  
+        </ul>
+        {% if is_mentor %}
+            Hello {{ user.name }}! tell us how can we help you!.
+            <form action="{{ url_for('messages') }}" method="POST">
+
+                Username
+                <input type="text"
+                       name="username"
+                       value="{{ user.username }}"
+                       readonly>
+                <br />
+
+                Message text:
+                <input type="text" name="text" placeholder="">
+                <br />
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+            All messages:
+
+        {% for message in messages %}
+            <div>
+                <ul>
+                    <li>
+                        User: {{ message.username }}
+                    </li>
+                    <li>
+                        Message: {{ message.text }}
+                    </li>
+                </ul>
+            </div>
+        {% endfor %}
+
+        {% else %}
+            Please login to leave a message! :~)
+        {% endif %}
+
+        <br />
+
+    </body>
+</html>

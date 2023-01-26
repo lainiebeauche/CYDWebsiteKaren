@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+           Resources
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="../static/Resources.css">
+
+              <link rel="stylesheet" type="text/css"
+              href="{{ url_for('static', filename='Resources.css')}}">
+    </head>
+    <body>
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+        <!-- Write the title of the page in a large heading font -->
+        <center>
+        <h1>
+           We have resources that will help you with the assistance to your needs such as food, shelter and other links  
+        </h1></center>
+        <!-- Show the navbar -->
+       
+		<h2>Personal Empowerment</h2>
+		<ol>
+			<li>
+				Shelter
+				<a href="https://www.domesticshelters.org">/help/ny/brooklyn</a>
+"
+			</li>
+			<li>
+				Food Assistance
+				<a href="https://otda.ny.gov">/programs/temporary-assistance</a>;
+                <a href="https://www.ny.gov">/services/apply-snap</a>
+			</li>
+			<li>
+				Look up jobs
+				<a href="https://www.simplyhired.com">find the prefect job</a>; 
+                <a href="https://www.indeed.com">find the perfect job</a>; 
+                <a href="https://www.monster.com">find the prefect job
+                </a>
+			</li>
+			<li>
+				Education
+				<a href="https://www.federalgrants.com">grants-for-single-mothers</a>
+
+			</li>
+			</ol>
+			<div id="Quotes-div">
+				<h4>
+					{{ quote }}
+				</h4>
+				<a href="{{ url_for('resources', quote_number=(quote_number + 1)) }}">
+					<button>
+						Click to change quote!
+					</button>
+				</a>
+			</div>
+			<h2>
+				
+			<li>
+			 We are stronger together
+			</li>
+		</ol>
+		
+	</body>
+</html>

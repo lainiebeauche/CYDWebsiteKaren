@@ -1,0 +1,47 @@
+html {
+    height:100% ;
+}
+body{background-color:blanchedalmond;background-size: 150% 150%;background-repeat: no-repeat; display: inline-block;vertical-align: middle; }
+li{color:brown;font-weight:bold; }
+html {
+    height:100%;
+}
+
+html {
+    height:100%;
+}
+#background-size { 
+    height:100% ; 
+    background-color: url("blanchedalmond"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  h1 {  text-align: center; font-family: 'cursive;',
+ serif; color:brown ; font-size: 30px; }
+
+
+        h2{ font-family: 'cursive;', 
+    sans-serif ; color:whitesmoke; font-size: 22px}
+        p {
+    font-family: fantasy;, sans-serif ; 
+    font-style:  italic ; color:#;font-size: 51px;}
+            
+             p {
+    font-family: 'cursive;', sans-serif ; 
+    font-style:  italic ; color:#black;}
+.navBar{ 
+    display: flex; 
+    justify-content: space-between;
+margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+}
+.links a{
+    color: deeppink;
+    text-decoration:  none; font-size: 24px;
+}
+.links a:hover{color: dodgerblue;}

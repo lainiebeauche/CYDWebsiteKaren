@@ -1,0 +1,40 @@
+html {
+	height:100% ;
+}
+body{background-image:url("B(1).jpg");background-size: 150% 150%;background-repeat: no-repeat; display: inline-block;vertical-align: middle; }
+li{color:black;font-weight:bold; }
+html {
+    height:100%;
+}
+#B(1).jpg { 
+    height:100% ; 
+    background-image: url("B(1).jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  h1 {  text-align: center; font-family: 'cursive;',
+ serif; color:navajowhite ; font-size: 30px; }
+
+p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+        h2{ font-family: 'cursive;', 
+    sans-serif ; color:navasmoke; font-size: 22px}
+        p {
+    font-family: fantasy;, sans-serif ; 
+    font-style:  italic ; color:#;font-size: 51px;}
+            
+             p {
+    font-family: 'cursive;', sans-serif ; 
+    font-style:  italic ; color:#black;}
+.navBar{ 
+    display: flex; 
+    justify-content: space-between;
+margin-bottom: 25px;
+}
+<html 

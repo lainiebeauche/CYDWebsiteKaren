@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../static/about us.css">
+    <link rel="stylesheet" type="text/css"
+              href="{{ url_for('static', filename='about us.css')}}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+</head>
+<body>
+	<nav>
+    <div>
+            {% include "navbar.html" %}
+        </div>
+	
+    <center>
+    <img src="{{ url_for('static', filename='OIP.jpg')}}"alt="" width="350" height="300">
+    </center>
+    <p>
+    <center>
+    <h1>I K.Edwards a survive of abuse, the founder/creater of this Amass app. I do not want any woman to feel like I did, alone and ashamed of being judged by other and shut down and didn't asked for help. We are mentors, caring and nonjudgmental, who will be your support through this and will help you to find the resources need, such as shelter ,food and ect. so you may make a life changing decision towards a brighter future. </h1></center>
+    <center>
+    <img src="{{ url_for('static', filename='R (1).jpg')}}"alt=""with="400" height="300">
+    </center>
+    <center>
+    <h2>We are women who are surviviors / mentor women, here to support you, in your journey to FREEDOM from the abusive relationship you are in at the moment.</h2></center>      
+
+</body>
+</html>

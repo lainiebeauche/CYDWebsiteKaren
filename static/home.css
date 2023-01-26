@@ -1,0 +1,48 @@
+html {
+	height:100% ;
+}
+body{background-image:url("songs-about-strong-women.jpg");background-size: 150% 150%;background-repeat: no-repeat; display: inline-block;vertical-align: middle; }
+li{color:white;font-weight:bold; }
+html {
+    height:100%;
+}
+#song-about-strong-women { 
+    height:100% ; 
+    background-image: url("songs-about-strong-women.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  h1 {  text-align: center; font-family: 'cursive;',
+ serif; color:white ; font-size: 30px; }
+
+p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+        h2{ font-family: 'cursive;', 
+    sans-serif ; color:whitesmoke; font-size: 22px}
+        p {
+    font-family: fantasy;, sans-serif ; 
+    font-style:  italic ; color:#;font-size: 51px;}
+            
+             p {
+    font-family: 'cursive;', sans-serif ; 
+    font-style:  italic ; color:#black;}
+.navBar{ 
+    display: flex; 
+    justify-content: space-between;
+margin-bottom: 25px;
+}
+
+.links {
+    display: flex;
+}
+.links a{
+    color: deeppink;
+    text-decoration:  none; font-size: 24px;
+}
+.links a:hover{color: dodgerblue;}

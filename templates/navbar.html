@@ -1,0 +1,56 @@
+<a href="{{ url_for('home') }}">
+    <button style="background-color:brown;color:white;">
+        Home
+    </button>
+</a>
+<a href="{{ url_for('about') }}">
+    <button style="background-color:brown;color:white;">
+        About
+    </button>
+</a>
+<a href="{{ url_for('resources') }}">
+    <button style="background-color:brown;color:white;">
+        Resources
+    </button>
+</a>
+<a href="{{ url_for('messages') }}">
+    <button style="background-color:brown;color:white;">
+        Messages
+    </button>
+</a>
+
+<a href="{{ url_for('comments') }}">
+    <button style="background-color:brown;color:white;">
+        Comments
+    </button>
+</a>
+
+<!-- If the user is logged in, show the profile and logout links -->
+{% if session %}
+
+    <a href="{{ url_for('profile') }}">
+        <button style="background-color:brown;color:white;">
+            Profile
+        </button>
+    </a>
+    <a href="{{ url_for('logout') }}">
+        <button style="background-color:brown;color:white;">
+            Logout
+        </button>
+    </a>
+
+{% else %}
+
+    <!-- Otherwise, show the login and signup links -->
+    <a href="{{ url_for('login') }}">
+        <button style="background-color:brown;color:white;">
+            Login
+        </button>
+    </a>
+    <a href="{{ url_for('signup') }}">
+        <button style="background-color:brown;color:white;">
+            Signup
+        </button>
+    </a>
+
+{% endif %}
