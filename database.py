@@ -116,5 +116,17 @@ def add_comment(username, text):
     SESSION.commit()
 
 
+def delete_all_users():
+    SESSION.query(User).delete()
+
+
+def delete_all_messages():
+    SESSION.query(Message).delete()
+
+
+def delete_all_comments():
+    SESSION.query(Comment).delete()
+
+
 def get_all_comments():
     return reversed(SESSION.query(Comment).all())

@@ -5,6 +5,7 @@ from flask import (
 from database import (
     is_username_taken, add_user, authenticate, get_user_from_database,
     get_all_messages, add_message, get_all_comments, add_comment,
+    delete_all_messages, delete_all_comments, delete_all_users
 )
 
 APP = Flask(__name__)
@@ -263,6 +264,16 @@ def comments():
         messages=get_all_comments(),
         session=session
     )
+
+
+@APP.route('/delete')
+def delete():
+    # delete all messages
+    delete_all_messages()
+    delete_all_comments()
+    delete_all_users()
+    return redirect(url_for('home'))
+
 
 if __name__ == "__main__":
     APP.run(port=8000, debug=True)
